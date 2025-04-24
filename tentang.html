@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="tentang.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">Viva.Sportiva</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">About</a></li>
+        <li><a href="kegiatan.html">Activity</a></li>
+        <li><a href="kontak.html">Contact</a></li>
+      </ul>
+      <img src="menu.png" alt="menu" class="menu-btn" />
+    </nav>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+
+    <main>
+      <section class="about">
+        <div class="row">
+          <div class="col text-col">
+            <h1>About Viva Sportiva Community</h1>
+            <p>
+              Viva Sportiva adalah sebuah komunitas yang menampung anggota
+              pecinta olahraga di Kampus ABC. Dibentuk dan diresmikan pada
+              tanggal 23 April 2025 oleh ketua komunitas yakni Dilan Ramadhan.
+              Viva Sportiva menaungi beberapa Unit Kegiatan Mahasiswa yang
+              berhubungan dengan olahraga seperti Futsal, Volly, Bulu tangkis,
+              Tenis Meja, Taekwondo, Silat, Karate, Catur, dll.
+            </p>
+            <br />
+            <a href="kegiatan.html" class="btn">Learn More</a>
+          </div>
+          <br /><br />
+
+          <div class="col">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
